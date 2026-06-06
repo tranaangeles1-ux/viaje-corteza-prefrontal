@@ -1,0 +1,94 @@
+.scoreboard {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  color: white;
+  animation: slideIn 0.5s ease;
+}
+
+.scoreboard-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.scoreboard-players {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.scoreboard-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.scoreboard-item.active {
+  border-color: #ffd700;
+  background: rgba(255, 215, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.player-rank {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.player-progress {
+  margin: 12px 0;
+}
+
+.position-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.position-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  transition: width 0.5s ease;
+  border-radius: 4px;
+}
+
+.position-text {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.rewards {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.medals,
+.shields {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}

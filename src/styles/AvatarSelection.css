@@ -1,0 +1,123 @@
+.avatar-selection {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title-section h1 {
+  font-size: 48px;
+  color: #667eea;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #999;
+  font-style: italic;
+}
+
+.avatars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.avatar-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  text-align: center;
+  color: white;
+}
+
+.avatar-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+}
+
+.avatar-card.selected {
+  border-color: #ffd700;
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+.avatar-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.avatar-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.selected-players {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.selected-players h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.players-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.player-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-avatar-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.player-name-input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
